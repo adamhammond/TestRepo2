@@ -15,12 +15,12 @@ namespace WinForms
         public Form1()
         {
             InitializeComponent();
-
+            int x = 3;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            // Open dialog box for user to be able to change form background color
             ModelessDialog modelessDialog = new ModelessDialog(this);
             modelessDialog.ChangedWord += ModelessDialog_ChangedWord;
             modelessDialog.Show();
